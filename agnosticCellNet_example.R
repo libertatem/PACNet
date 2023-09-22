@@ -4,6 +4,12 @@ library(devtools)
 install_github("pcahan1/CellNet", ref="master")
 install_github("pcahan1/cancerCellNet@v0.1.1", ref="master")
 
+#### dependencies for cancerCellnet
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("GO.db")
+BiocManager::install("org.Hs.eg.db")
+
 # Load libraries
 library(CellNet)
 library(cancerCellNet)

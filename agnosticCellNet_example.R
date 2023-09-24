@@ -1,3 +1,6 @@
+
+setwd("~/Documents/GitHub/PACNet/")
+
 # Installation
 install.packages("devtools")
 library(devtools)
@@ -22,8 +25,8 @@ library(igraph)
 source("pacnet_utils.R")
 
 # Load training data:
-expTrain <- utils_loadObject("Hs_expTrain_Jun-20-2017.rda")
-stTrain <- utils_loadObject("Hs_stTrain_Jun-20-2017.rda")
+expTrain <- utils_loadObject('Hs_expTrain_Jun-20-2017.rda')
+stTrain <- utils_loadObject('Hs_stTrain_Jun-20-2017.rda')
 
 # Load engineered reference data and query data. 
 # We need to load these at this point to identify genes found in across all datasets.
